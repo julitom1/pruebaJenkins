@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'mcr.microsoft.com/dotnet/nightly/sdk:6.0' } }
+    agent any
     stages {
         stage('build') {
             steps {
